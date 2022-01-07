@@ -86,7 +86,7 @@ p{
 }
 #header .header {
 	min-height: 8vh;
-	background-color: rgba(31, 30, 30, 0.24);
+	background-color: transparent;
 	transition: 0.3s ease background-color;
 }
 #header .nav-bar {
@@ -205,7 +205,7 @@ p{
 
 /* Hero Section */
 #hero{
-	background-image: url(./img/hero-bg.jpg);
+	background-image: url(./img/mickey-dziwulski-totQaeZeHDw-unsplash.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -301,6 +301,7 @@ p{
 #skills .skill-item{
 	flex-basis: 80%;
 	display: flex;
+	max-width: 480px;
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
@@ -320,7 +321,7 @@ p{
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #503737 100%);
+	background-image: linear-gradient(60deg, #2c201c 0%, #554342 100%);
 	opacity: .8;
 	z-index: -1;
 }
@@ -375,7 +376,7 @@ p{
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background-image: linear-gradient(60deg, #271212 0%, #694343 100%);
+	background-image: linear-gradient(60deg, #542825 0%, #672b1a 100%);
 	color: white;
 }
 #projects .project-info h1{
@@ -427,6 +428,9 @@ p{
 }
 #about .col-right p {
 	margin-bottom: 20px;
+}
+#about .col-right p a {
+	color: crimson;
 }
 #about .col-right .cta {
 	color: black;
@@ -498,7 +502,7 @@ p{
 
 /* Footer */
 #footer {
-	background-image: linear-gradient(60deg, #271212 0%, #694343 100%);
+	background-image: linear-gradient(60deg, #542825 0%, #672b1a 100%);
 }
 #footer .footer {
 	min-height: 200px;
