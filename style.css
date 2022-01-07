@@ -332,6 +332,7 @@ p{
 }
 #skills .skill-item h2{
 	font-size: 2rem;
+	text-align: left;
 	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
