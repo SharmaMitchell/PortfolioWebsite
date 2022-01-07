@@ -321,7 +321,7 @@ p{
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #2c201c 0%, #554342 100%);
+	background-image: linear-gradient(60deg, #2c1c1c 0%, #5e4242 100%);
 	opacity: .8;
 	z-index: -1;
 }
@@ -346,7 +346,7 @@ p{
 /* Projects Section */
 #projects .projects{
 	flex-direction: column;
-	max-width: 1200px;
+	max-width: 1500px;
 	margin: 0 auto;
 	padding: 100px 0;
 }
@@ -369,7 +369,7 @@ p{
 	overflow: hidden;
 	border-radius: 10px;
 }
-#projects .project-info{
+#projects .project-info-py{ /* Make this more efficient later */
 	padding: 30px;
 	flex-basis: 50%;
 	height: 100%;
@@ -377,19 +377,72 @@ p{
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background-image: linear-gradient(60deg, #542825 0%, #672b1a 100%);
+	background-image: url(./img/Python-banner-c.png);
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
 	color: white;
 }
-#projects .project-info h1{
+#projects .project-info-py::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #2c1c1c 0%, #5e4242 100%);
+	opacity: .8;
+	z-index: -1;
+}
+#projects .project-info-py h1{
 	font-size: 3rem;
 	font-weight: 500;
 }
-#projects .project-info h2{
+#projects .project-info-py h2{
 	font-size: 1.8rem;
 	font-weight: 500;
 	margin-top: 10px;
 }
-#projects .project-info p{
+#projects .project-info-py p{
+	color: white;
+}
+#projects .project-info-html{ /* Make this more efficient later */
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: url(./img/HTML-CSS-banner.png);
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	color: white;
+}
+#projects .project-info-html::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #2c1c1c 0%, #5e4242 100%);
+	opacity: .8;
+	z-index: -1;
+}
+#projects .project-info-html h1{
+	font-size: 3rem;
+	font-weight: 500;
+}
+#projects .project-info-html h2{
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-top: 10px;
+}
+#projects .project-info-html p{
 	color: white;
 }
 #projects .project-img{
@@ -401,7 +454,7 @@ p{
 #projects .project-img img{
 	transition: .3s ease transform;
 }
-#projects .project-item:hover .project-img img{
+#projects .project-item .project-img:hover img{
 	transform: scale(1.05);
 }
 /* End of Projects Section */
@@ -503,7 +556,7 @@ p{
 
 /* Footer */
 #footer {
-	background-image: linear-gradient(60deg, #542825 0%, #672b1a 100%);
+	background-image: linear-gradient(60deg, #2c1c1c 0%, #5e4242 100%);
 }
 #footer .footer {
 	min-height: 200px;
@@ -599,23 +652,14 @@ p{
 	/* End Skills Section */
 
 	/* Projects Section */ 
-	#projects .project-item {
+	#projects .all-projects {
 		flex-direction: row;
 	}
-	#projects .project-item:nth-child(even) {
-		flex-direction: row-reverse;
-	}
 	#projects .project-item {
-		height: 400px;
-		margin: 0;
-		width: 100%;
-		border-radius: 0;
-	}
-	#projects .all-projects .project-info {
-		height: 100%;
+		margin: auto 20px;		
 	}
 	#projects .all-projects .project-img {
-		height: 100%;
+		width: 100%;
 	}
 	/* End of Projects Section */
 
@@ -704,9 +748,6 @@ p{
 	}
 	/* End header */
 
-	#services .service-bottom .service-item {
-		flex-basis: 22%;
-		margin: 1.5%;
-	}
+	
 }
 /* End  Media Query For Desktop */
