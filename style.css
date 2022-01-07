@@ -237,11 +237,15 @@ p{
 	animation: text_reveal .5s ease forwards;
 	animation-delay: 1s;
 }
+#hero h1 red{
+	animation: text_reveal_name .5s ease forwards;
+	animation-delay: 2.5s;
+}
 #hero h1:nth-child(1){
 	animation-delay: 1s;
 }
 #hero h1:nth-child(2){
-	animation: text_reveal_name .5s ease forwards;
+	/* animation: text_reveal_name .5s ease forwards; */
 	animation-delay: 2.5s;
 }
 #hero h1 span{
@@ -457,6 +461,15 @@ p{
 #projects .project-item .project-img:hover img{
 	transform: scale(1.05);
 }
+#projects .view-more{
+	margin-top: 10px;
+}
+#projects .view-more a{
+	color: crimson;
+	text-decoration: underline;
+	font-size: 2rem;
+	font-weight: 500;
+}
 /* End of Projects Section */
 
 /* About Section */
@@ -660,6 +673,9 @@ p{
 	}
 	#projects .all-projects .project-img {
 		width: 100%;
+	}
+	#projects .view-more{
+		margin-top: 30px;
 	}
 	/* End of Projects Section */
 
