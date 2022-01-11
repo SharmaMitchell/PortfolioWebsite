@@ -228,6 +228,9 @@ p{
 	padding: 0 50px;
 	justify-content: flex-start;
 }
+#hero .container{
+	flex-direction: column;
+}
 #hero h1{
 	display: block;
 	width: fit-content;
@@ -271,7 +274,16 @@ p{
 	animation: text_reveal .75s ease forwards;
 	animation-delay: 3.25s;
 }
-
+#hero .hero-right .hero-img{
+	width: 200px;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 150px;
+	margin-top: 125px;
+	margin-bottom: 20px;
+	border: 7px solid white;
+	background: white;
+}
 /* End of Hero Section */
 
 /* Skills Section */
@@ -652,6 +664,13 @@ p{
 	}
 
 	/* Hero Section */
+	#hero .hero{
+		flex-direction: row-reverse;
+	}
+	#hero .hero-right .hero-img{
+		width: 260px;
+		margin-top: -20px;
+	}
 	#hero h1 {
 		font-size: 7rem;
 	}
