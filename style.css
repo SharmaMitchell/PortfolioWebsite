@@ -536,6 +536,9 @@ p{
 /* End of About Section */
 
 /* Contact Section */
+#contact .container{
+	min-height: 50vh;
+}
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
@@ -581,7 +584,7 @@ p{
 
 /* Footer */
 #footer {
-	background-image: linear-gradient(60deg, #2c1c1c 0%, #5e4242 100%);
+	background-image: linear-gradient(125deg, #333333 0%, #212121 100%);
 }
 #footer .footer {
 	min-height: 200px;
