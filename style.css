@@ -168,7 +168,7 @@ p{
 	width: 100%;
 	border-radius: 50%;
 	border: 3px solid white;
-	animation: hamburger_pulse 1s ease infinite;
+	/* animation: hamburger_pulse 1s ease infinite; */
 }
 #header .hamburger .bar {
 	height: 2px;
@@ -297,7 +297,7 @@ p{
 
 #skills .skills-top p{
 	color: black;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	margin-top: 5px;
 	line-height: 2.5rem;
 	font-weight: 300px;
@@ -484,6 +484,79 @@ p{
 }
 /* End of Projects Section */
 
+/* Clubs Section */
+#club .club{
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#club .club-header p{
+	color: black;
+	font-size: 1.6rem;
+	margin-top: 5px;
+	line-height: 2.5rem;
+	font-weight: 300px;
+	letter-spacing: .05rem;
+}
+#club .club-list{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+#club .club-item{
+	flex-basis: 80%;
+	display: flex;
+	max-width: 480px;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url(./img/UH-Seal-BG-Wide.png);
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+#club .club-item::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #2c1c1c 0%, #5e4242 100%);
+	opacity: .8;
+	z-index: -1;
+}
+#club .club-list .icon{
+	height: 80px;
+	width: 80px;
+	margin-bottom: 20px;
+}
+#club .club-item h2{
+	font-size: 2rem;
+	text-align: left;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+#club .club-item h3{
+	font-size: 1.4rem;
+	color: white;
+	text-align: left;
+}
+#club .club-item p{
+	color: white;
+	text-align: left;
+}
+/* End of Clubs Section */
+
 /* About Section */
 #about .about{
 	flex-direction: column-reverse;
@@ -610,11 +683,11 @@ p{
 	margin: 0 5px;
 }
 #footer .social-item img {
-	filter: invert(0%);
-	transition: 0.3s ease filter;
+	filter: invert(100%);
+	transition: 0.3s ease transform;
 }
 #footer .social-item:hover img {
-	filter: invert(1000%);
+	transform: scale(1.05);
 }
 #footer p {
 	color: white;
@@ -663,7 +736,7 @@ p{
 		padding: 20px 60px;
 	}
 	h1.section-title {
-		font-size: 6rem;
+		font-size: 5rem;
 	}
 
 	/* Hero Section */
