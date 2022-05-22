@@ -22,8 +22,10 @@
 						<li><a href="#skills" data-after="Skills">Skills</a></li>
 						<li><a href="#projects" data-after="Projects">Projects</a></li>
 						<li><a href="#about" data-after="About">About</a></li>
-						<li><a href="#contact" data-after="Contact">Contact</a></li>
-						<li><a href="https://blog.mitchellsharma.com/" data-after="Blog">Blog</a></li>
+						<!--
+						<li><a class="page-sec" href="#contact" data-after="Contact">Contact</a></li>
+						<li><a class="page-sec" href="https://blog.mitchellsharma.com/" data-after="Blog">Blog</a></li>
+						-->
 					</ul>
 				</div>
 			</div>
@@ -47,19 +49,37 @@
 				<h2 class = hero-glance> <img src="./img/briefcase.png" alt="img"> Software Developer Intern </h2>
 				<h2 class = hero-glance> <img src="./img/bldg.png" alt="img"> Freddie Mac </h2>
 				<p>I’m a software engineer based in Houston, TX. Studying Computer Science at the University of Houston, graduating May 2024. </p>
+				<!--
 				<a href="#projects" type="button" class="cta">Portfolio</a>
+				-->
+				<div class="social-icon">
+					<div class="social-item">
+					<a href="./files/Resume 2-19-2022.pdf"><img src="./img/cv-icon-80x100.png" /></a>
+					</div>
+					<div class="social-item">
+					<a href="https://www.linkedin.com/in/mitchell-sharma/"><img src="./img/linkedin.png" /></a>
+					</div>
+					<div class="social-item">
+					<a href="https://github.com/SharmaMitchell"><img src="./img/github.png" /></a>
+					</div>
+					<div class="social-item">
+					<a href="mailto:sharmamitch@gmail.com"><img src="./img/mail-icon-black.jpg" /></a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 	<!-- End of Hero Section -->
 
 	<!-- Skills Section -->
-	
+
 	<section id="skills">
 		<div class="skills container">
 			<div class="skills-top">
-				<h1 class="section-title">Sk<span>i</span>lls</h1>
+				<h1 class="section-title">Sk<span>i</span>lls</h1>				
+				<!--
 				<p>Skills I've acquired through self-study, and my time at the University of Houston</p>
+				-->
 			</div>
 			<div class="skills-bottom">
 				<div class="skill-item">
@@ -85,7 +105,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- End of Skills Section -->
 
 	<!-- Projects Section -->
@@ -96,38 +116,77 @@
 			</div>
 			<div class="all-projects">
 				<div class="project-item">
-					<div class="project-info-py">
-						<h1>Translator Discord Bot</h1>
+					<div class="project-img">
+						<div class="project-img-preview">
+						<a href="https://github.com/SharmaMitchell/JLCCWebsite"><img src="./img/JLCC-Site-Landing2.png" alt="img"></a> 
+						</div>
+						<div class="project-img-top">
+							<img src="./img/github.png">
+						</div>
+					</div>
+					<div class="project-info">
+						<h1>UH Japanese Club Website</h1>
+						<h2>Official website for the University of Houston's Japanese club</h2>
+						<!--
+						<p>Displays information on club events, membership, leadership, etc. Event data is pulled from a Google Sheet via API, allowing club leadership to update events without programming. Website built using HTML, CSS, and JavaScript; Google Sheets scripting implemented with JavaScript. </p>
+						-->
+						<ul> 
+							<li>Displays info on club events, membership, leadership, etc.</li>
+							<li>Event data pulled from Google Sheets via API</li>
+							<li>Built using HTML, CSS, JS; Google Sheets scripting via JS</li>
+						</ul>
+						<a href="https://jlccwebsite.sharmamitchell.repl.co/" class="cta">Live Demo</a>
+					</div>
+				</div>
+				<div class="project-item">
+					<div class="project-img">
+						<div class="project-img-preview">
+						<a href="https://github.com/SharmaMitchell/TranslatorDiscordBot"><img src="./img/KomiBot-Banner.png" alt="img"></a> 
+						</div>
+						<div class="project-img-top">
+							<img src="./img/github.png">
+						</div>
+					</div>
+					
+					<div class="project-info">
+						<h1>Discord Translation Bot</h1>
 						<h2>On-demand translations within Discord chat</h2>
-						<p>Discord bot that translates chat messages between English and Japanese. Bot detects input language before sending a request for translation via DeepL. Built using Discord.py and DeepL's translation API. Hosted on replit.</p>
-					</div>
-					<div class="project-img">
-						<a href="https://github.com/SharmaMitchell/TranslatorDiscordBot"><img src="./img/KomiBot-Sample.png" alt="img"></a> 
-					</div>
-				</div>
-				<div class="project-item">
-					<div class="project-info-py">
-						<h1>Spaced Repitition System</h1>
-						<h2>Vocabulary retention via flashcard-like software</h2>
-						<p>A digital implementation of flashcards which tracks & prioritizes difficult cards. Vocabulary stored in a TSV file which can be imported or exported to/from other popular SRS platforms, such as Anki. TSV updated for word familiarity and new card additions after each session. Built with python, using tkinter for GUI.</p>
-					</div>
-					<div class="project-img">
-						<a href="https://github.com/SharmaMitchell/PythonSRS"><img src="./img/SRS-Sample7.png" alt="img"></a> 
+						<!--
+						<p>Discord bot that translates chat messages between English and Japanese. Bot detects input language before sending a request for translation via DeepL API. Built using Discord.py and DeepL's translation API. Hosted on replit.</p>
+						-->
+						<ul> 
+							<li>Translates chat messages between English and Japanese</li>
+							<li>Created for use on the UH Japanese Club Discord server</li>
+							<li>Built with Python, Discord.py library, DeepL Translation API</li>
+						</ul>
 					</div>
 				</div>
 				<div class="project-item">
-					<div class="project-info-html">
+					<div class="project-img">
+						<div class="project-img-preview">
+							<a href="https://github.com/SharmaMitchell/PortfolioWebsite"><img src="./img/portfoliowebsite-720.png" alt="img"></a> 
+						</div>
+						<div class="project-img-top">
+							<img src="./img/github.png">
+						</div>
+					</div>
+					<div class="project-info">
 						<h1>This Website</h1>
-						<h2>My first web development project</h2>
+						<h2>Responsive Web Portfolio</h2>
+						<!--
 						<p>A web-based portfolio to impress friends (and hopefully, future employers). Built & improved upon starting with a guide. Primarily created to improve my familiary of HTML & CSS, and give myself an opportunity to work on a web-based project.</p>
-					</div>
-					<div class="project-img">
-						<a href="https://github.com/SharmaMitchell/PortfolioWebsite"><img src="./img/you-are-here.jpg" alt="img"></a> 
+						-->
+						<ul> 
+							<li>Displays info on <em>yours truly</em>, including my resume & skillset.</li>
+							<li>Highlights my recent projects, giving insight into my work.</li>
+							<li>My first web project (meticulously tinkered with for hours)</li>
+							<li>Built using HTML, CSS, and vanilla JavaScript</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 				<div class="view-more">
-					<a href="https://github.com/SharmaMitchell">View More on GitHub</a>
+					<div class="view-more-b"><a href="https://github.com/SharmaMitchell"> View More on GitHub</a> </div>
 				</div>
 		</div>
 	</section>
@@ -140,15 +199,18 @@
 				<div class="about-img">
 					<img src="./img/mee.jpg" alt="img">
 				</div>
+				
 				<a href="./files/Resume 2-19-2022.pdf" class="cta">View Resume</a>
-				<a id="contact" href="mailto:sharmamitch@gmail.com" class="cta">Email Me</a>
+				
 			</div>
 			<div class="col-right">
 				<h1 class="section-title">About <span>Me</span></h1>
 				<h2>Aspiring Software Engineer</h2>
-				<p>Greetings! First of all, thank you for taking the time to visit my website. As you may have read above, my name is Mitchell and I'm an aspiring software engineer from Houston, Texas. I'm currently a sophomore at the University of Houston with a major in Computer Science and a minor in Mathematics, planning to graduate in May 2024.</p>
-				<p>As of writing this (in January 2022), I've just finished my sophomore-level CS classes, and I'm feeling ready to contribute what I've learned thus far to a real-world project. I'm currently working on a number of personal projects which you can read about <a href="#projects">above</a>, or on my <a href="https://github.com/SharmaMitchell">GitHub page</a>. </p>
-				<p>As you may gather from my projects and working experience as an ESL tutor, I have a passion for education - especically langauge learning. Since I started self-studying Japanese as a teenager, I've developed a deep interest in linguistic education. That interest has influenced me as a programmer as well, and inspired me to create a number of language-related projects including a <a href="https://github.com/SharmaMitchell/TranslatorDiscordBot">translator Discord bot</a>, and a <a href="https://github.com/SharmaMitchell/PythonSRS">spaced repetition system</a>. </p>
+				<p>Greetings! First of all, thank you for taking the time to visit my website. As you may have read above, my name is Mitchell and I'm a software engineer from Houston, Texas. I'm currently a Junior student at the University of Houston with a major in Computer Science and a minor in Mathematics, planning to graduate in May 2024.</p>
+				<!--
+				<p>As of writing this (in May 2022), I've just finished my Operating Systems and Discrete Math classes (both very challenging), and I'm touching up on my personal projects from this past semester (including this site!). </p>
+				-->
+				<p>As you may gather from my projects and working experience as an ESL tutor, I have a passion for education - especically langauge learning. Since I started self-studying Japanese as a teenager, I've developed a deep interest in linguistic education. That interest has influenced me as a programmer as well, and inspired me to create a number of language-related projects including a <a href="https://github.com/SharmaMitchell/TranslatorDiscordBot">Discord translation bot</a>, and a <a href="https://github.com/SharmaMitchell/PythonSRS">spaced repetition system</a>. </p>
 				<p>In the future, I hope to continue working on meaningful projects to solve problems, contribute to positive causes, and help people achieve their goals. </p>
 				
 			</div>
@@ -170,6 +232,9 @@
 			<div class="social-item">
 			<a href="https://github.com/SharmaMitchell"><img src="./img/github.png" /></a>
 			</div>
+			<div class="social-item">
+					<a href="mailto:sharmamitch@gmail.com"><img src="./img/mail-icon-black.jpg" /></a>
+					</div>
 		</div>
 		<p>Copyright © 2022 Mitchell Sharma. All rights reserved</p>
 		</div>
