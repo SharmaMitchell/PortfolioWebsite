@@ -774,6 +774,9 @@ p{
 	/* End Skills Section */
 
 	/* Projects */
+	#projects .all-projects{
+		width: 65%;
+	}
 	#projects .project-img{
 		border-width: 9px;
 	}
