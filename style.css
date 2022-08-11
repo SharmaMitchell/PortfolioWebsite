@@ -14,7 +14,7 @@ a{
 	text-decoration: none;
 }
 .container{
-	min-height: 100vh;
+	/* min-height: 100vh;*/
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -56,6 +56,9 @@ p{
 	color: black;
 	background-color: transparent;
 	border: 2px solid crimson;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -231,6 +234,7 @@ p{
 }
 #hero .container{
 	flex-direction: column;
+	min-height: 100vh;
 }
 #hero h1{
 	/*display: block;*/
@@ -308,6 +312,7 @@ p{
 }
 #hero .social-icon {
 	margin-top: 20px;
+	margin-bottom: 20px;
 }
 #hero .social-item {
 	height: 50px;
@@ -358,18 +363,29 @@ p{
 	flex-basis: 80%;
 	display: flex;
 	max-width: 480px;
-	align-items: flex-start;
+	height: 400px;
+	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	padding: 30px;
-	border-radius: 10px;
-	background-image: url(./img/UH-Seal-BG-Wide.png);
-	background-size: cover;
-	background-position: right;
+	/* border-radius: 10px; */
+	background-color: black;
+	background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/University_of_Houston_System_seal.svg/1200px-University_of_Houston_System_seal.svg.png);
+	background-size: contain;
+	background-position: top center;
+	background-repeat: no-repeat;
 	margin: 10px 5%;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+	border: 8px solid;
+	border-left-width: 0px;
+	border-top-width: 0px;
+	border-right-color: crimson;
+	border-bottom-color: crimson;
+	border-radius: 20px;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
 }
 #skills .skill-item::after{
 	content: '';
@@ -378,7 +394,7 @@ p{
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #2c1c1c 0%, #5e4242 100%);
+	background-image: linear-gradient(0deg, #000000 50%, transparent 120%);
 	opacity: .8;
 	z-index: -1;
 }
@@ -464,7 +480,7 @@ p{
 	text-align: center;
 }
 #projects .project-info h2{
-	font-size: 1.8rem;
+	font-size: 2rem;
 	font-weight: bold;
 	margin-top: 10px;
 	color: black;
@@ -472,6 +488,7 @@ p{
 }
 #projects .project-info p{
 	color: black;
+	font-weight: 600;
 	text-align: center;
 }
 #projects .project-info ul{
@@ -484,7 +501,7 @@ p{
 	font-size: 1.4rem;
 	margin-top: 5px;
 	line-height: 2.5rem;
-	font-weight: 300px;
+	font-weight: 600;
 	letter-spacing: .05rem;
 }
 #projects .project-info .cta{
@@ -499,15 +516,19 @@ p{
 	width: 95%;
 	overflow: hidden;
 	position: relative;
-	border: 7px solid;
-	border-left-color: transparent;
-	border-top-color: transparent;
+	border: 8px solid;
+	border-left-width: 0px;
+	border-top-width: 0px;
 	border-right-color: crimson;
 	border-bottom-color: crimson;
-	/*background-image: url(./img/github.png);*/
+	border-radius: 20px;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	/*background-image: url(./img/github.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 20%;
+	*/
 }
 #projects .project-img img{
 	vertical-align: bottom;
@@ -551,6 +572,7 @@ p{
 	color: white;
 	font-size: 3rem;
 	font-weight: bold;
+	filter: drop-shadow(2px 2px 2px black)
 }
 #projects .view-more a:hover{
 	color: crimson;
@@ -561,6 +583,8 @@ p{
 	overflow: hidden;
 	display: inline-block;
 	position: relative;
+	text-align: center;
+	padding: 4px;
 }
 #projects .view-more .view-more-b a:after {
 	content: '';
@@ -770,6 +794,11 @@ p{
 	#skills .skills-bottom .skill-item {
 		flex-basis: 45%;
 		margin: 2.5%;
+		height: 300px;
+	}
+
+	#skills .skills-bottom .skill-item p{
+		text-align: justify;
 	}
 	/* End Skills Section */
 
@@ -778,7 +807,7 @@ p{
 		width: 65%;
 	}
 	#projects .project-img{
-		border-width: 9px;
+		/*border-width: 9px;*/
 	}
 	/* End Projects */
 
@@ -876,13 +905,13 @@ p{
 	#projects .project-item .project-info{
 		/* max-width: 75%;*/
 		/*border: none;*/
-		border-width: 9px;
+		/*border-width: 9px;*/
 		align-items: flex-start;
 		padding: 30px;
 	}
 	#projects .project-img {
 		/*width: 75%;*/
-		border-width: 9px;
+		/*border-width: 9px;*/
 		/*
 		border: 9px solid;
 		border-left-color: transparent;
