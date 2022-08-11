@@ -370,7 +370,7 @@ p{
 	padding: 30px;
 	/* border-radius: 10px; */
 	background-color: black;
-	background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/University_of_Houston_System_seal.svg/1200px-University_of_Houston_System_seal.svg.png);
+	background-image: url(./img/University_of_Houston_System_seal.png);
 	background-size: contain;
 	background-position: top center;
 	background-repeat: no-repeat;
