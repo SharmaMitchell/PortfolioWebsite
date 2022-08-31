@@ -414,6 +414,39 @@ p{
 	color: white;
 	text-align: left;
 }
+#skills .skills-tldr{
+	margin-top: 36px;
+}
+#skills .skills-tldr-container{
+	background-color: transparent;
+	border-radius: 20px;
+	border: 6px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 10px 10px;
+	margin: 0 10px;
+}
+#skills .skills-tldr-container h1{
+	margin-bottom: 10px;
+	font-size: 2.5rem;
+	color: black;
+	font-weight: bold;
+}
+#skills .skills-tldr-icons{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+#skills .skills-tldr-container i{
+	font-size: 40px;
+	color: black;
+	margin: 5px;
+}
 /* End of Skills Section */
 
 /* Projects Section */
@@ -799,6 +832,18 @@ p{
 
 	#skills .skills-bottom .skill-item p{
 		text-align: justify;
+	}
+	#skills .skills-tldr-container{
+		flex-direction: row;
+		border-radius: 50px;
+	}
+	#skills .skills-tldr-container h1{
+		margin-left: 10px;
+		margin-bottom: 0;
+	}
+	#skills .skills-tldr-container i{
+		font-size: 50px;
+		margin: 10px;
 	}
 	/* End Skills Section */
 
