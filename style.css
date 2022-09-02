@@ -802,7 +802,7 @@ p{
 	transition: ease 0.3s all;
 	font-size: 2rem;
 	font-weight: bold;
-	
+	color: black;
 }
 #about .resume-button:hover h2{
 	color: crimson;
