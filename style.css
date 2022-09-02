@@ -378,14 +378,7 @@ p{
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
-	border: 8px solid;
-	border-left-width: 0px;
-	border-top-width: 0px;
-	border-right-color: crimson;
-	border-bottom-color: crimson;
 	border-radius: 20px;
-	border-top-left-radius: 0px;
-	border-bottom-right-radius: 0px;
 }
 #skills .skill-item::after{
 	content: '';
@@ -521,8 +514,9 @@ p{
 }
 #projects .project-info p{
 	color: black;
-	font-weight: 600;
+	font-weight: 400;
 	text-align: center;
+	margin-bottom: 5px;
 }
 #projects .project-info ul{
 		list-style-type: disc;
@@ -549,19 +543,18 @@ p{
 	width: 95%;
 	overflow: hidden;
 	position: relative;
-	border: 8px solid;
 	border-left-width: 0px;
 	border-top-width: 0px;
-	border-right-color: crimson;
-	border-bottom-color: crimson;
 	border-radius: 20px;
-	border-top-left-radius: 0px;
-	border-bottom-right-radius: 0px;
+	border: 4px solid black;
 	/*background-image: url(./img/github.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 20%;
 	*/
+}
+#projects .komibot-pic{
+	transform: scale(1.02);
 }
 #projects .project-img img{
 	vertical-align: bottom;
@@ -582,7 +575,6 @@ p{
 	display: flex;
 }
 #projects .project-img .project-img-top img{
-	border-radius: 50%;
 	width: 20%;
 	height: auto;
 	background: transparent;
@@ -595,7 +587,7 @@ p{
 }
 #projects .project-item .project-img:hover .project-img-preview img{
 	transform: scale(1.05);
-	filter: blur(2px) brightness(.8);
+	filter: blur(1px) brightness(.6);
 }
 #projects .view-more{
 	margin-top: 10px;
@@ -605,7 +597,8 @@ p{
 	color: white;
 	font-size: 3rem;
 	font-weight: bold;
-	filter: drop-shadow(2px 2px 2px black)
+	filter: drop-shadow(2px 2px 2px black);
+	transition: all 0.25s ease-out;
 }
 #projects .view-more a:hover{
 	color: crimson;
@@ -629,30 +622,102 @@ p{
 	height: 3px;
 	background-color: crimson;
 	transform-origin: bottom right;
-	transition: transform 0.25s ease-out;
+	transition: transform 0.35s ease-out;
 	z-index: 1;
 }
 #projects .view-more a:hover:after {
 	transform: scaleX(1);
 	transform-origin: bottom left;
 }
+#projects .project-button{
+	height: 50px;
+	
+	border-radius: 25px;
+	border: 2px solid black;
+	border-left: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-right: 15px;
+	margin: 10px;
+	margin-left: 0;
+	margin-right: 20px;
+
+	transition: ease 0.3s all;
+}
+#projects .project-button:hover{
+	background: white;
+	transform: scale(1.05);
+}
+#projects .project-button h2:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom:0;
+	width: calc(100% - 75px);
+	transform: scaleX(0);
+	height: 3px;
+	background-color: crimson;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+	z-index: 1;
+	margin-left: 60px;
+	margin-bottom: 10px;
+}
+#projects .project-button:hover h2:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+#projects .project-button img{
+	height: 50px;
+	width: 50px;
+	margin-right: 10px;
+	transition: 0.3s ease all;
+}
+#projects .project-button:hover img{
+	
+}
+#projects .project-button h2{
+	margin: 0;
+	transition: ease 0.3s all;
+}
+#projects .project-button:hover h2{
+	color: crimson;
+}
+#projects .project-button-group{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 /* End of Projects Section */
 
 /* About Section */
+#about{
+	padding: 100px 20px;
+}
 #about .container{
 	min-height: 0px;
+	/*background-color: lightgray;*/
+	border-radius: 20px;
 }
 #about .about{
 	flex-direction: column-reverse;
 	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 100px 20px;
+	
 }
 #about .col-left {
-	width: 250px;
-	height: 360px;
+	/*width: 250px;*/
+	/*height: 360px;*/
 	margin-bottom: 110px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/*background: lightgray;*/
+	border-radius: 40px;
+	margin-top: 30px;
 }
 #about .col-right {
 	width: 100%;
@@ -668,6 +733,7 @@ p{
 }
 #about .col-right p a {
 	color: crimson;
+	font-weight: 600;
 }
 #about .cta {
 	/*color: black;*/
@@ -676,24 +742,70 @@ p{
 	font-size: 2rem;
 }
 #about .col-left .about-img {
-	height: 100%;
-	width: 100%;
+	height: 225px;
+	width: 225px;
 	position: relative;
-	border: 10px solid white;
-	margin-top: 30px;
-}
-#about .col-left .about-img::after {
-	content: '';
-	position: absolute;
-	left: -33px;
-	top: 19px;
-	height: 98%;
-	width: 98%;
-	border: 7px solid crimson;
-	z-index: -1;
+	margin-bottom: 10px;
 }
 #about .col-left .about-img img{
-	vertical-align: -webkit-baseline-middle;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 40px;
+	border: 4px solid black;
+}
+#about .resume-button{
+	height: 50px;
+	width: 205px;
+	border-radius: 10px;
+	border: 2px solid black;
+	border-left: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-right: 15px;
+	margin: 10px 0;
+	margin-bottom: 20px;
+	transition: ease 0.3s all;
+}
+#about .resume-button:hover{
+	background: white;
+	transform: scale(1.05);
+}
+#about .resume-button h2:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom:0;
+	width: calc(100% - 65px);
+	transform: scaleX(0);
+	height: 3px;
+	background-color: crimson;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+	z-index: 1;
+	margin-left: 50px;
+	margin-bottom: 10px;
+}
+#about .resume-button:hover h2:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+#about .resume-button img{
+	height: 50px;
+	width: 40px;
+	margin-right: 10px;
+	transition: 0.3s ease all;
+}
+#about .resume-button h2{
+	margin: 0;
+	transition: ease 0.3s all;
+	font-size: 2rem;
+	font-weight: bold;
+	
+}
+#about .resume-button:hover h2{
+	color: crimson;
 }
 /* End of About Section */
 
@@ -854,6 +966,9 @@ p{
 	#projects .project-img{
 		/*border-width: 9px;*/
 	}
+	#projects .project-button-group{
+    justify-content: flex-start;
+	}
 	/* End Projects */
 
 	/* About Section */
@@ -864,27 +979,21 @@ p{
 		margin-bottom: 0;
 	}
 	#about .col-left {
-		width: 600px;
-		height: 400px;
-		padding-left: 60px;
+		margin-left: 60px;
+		margin-right: 30px;
 		margin-bottom: 0;
+		margin-top: 0;
 	}
 	#about .col-left .about-img{
-		margin-top: 0;
-		margin-bottom: 30px;
-	}
-	
-	#about .about .col-left .about-img::after {
-		left: -45px;
-		top: 34px;
-		height: 98%;
-		width: 98%;
-		border: 10px solid crimson;
+		
+		width: 250px;
+		height: 250px;
 	}
 	
 	#about .col-right {
 		text-align: left;
 		padding: 30px;
+		padding-right: 60px;
 	}
 	#about .col-right h1 {
 		text-align: left;
