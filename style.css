@@ -756,7 +756,7 @@ p{
 }
 #about .resume-button{
 	height: 50px;
-	width: 205px;
+	/*width: 205px;*/
 	border-radius: 10px;
 	border: 2px solid black;
 	border-left: 0;
