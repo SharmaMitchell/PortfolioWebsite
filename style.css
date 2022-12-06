@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300, 400, 500, 600, 700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap');
 *{
 	padding: 0;
@@ -74,6 +74,7 @@ p{
 	font-size: 2.5rem;
 	text-transform: uppercase;
 	color: white;
+	font-weight: 500;
 }
 .brand h1 span{
 	color: crimson;
@@ -92,6 +93,7 @@ p{
 	min-height: 8vh;
 	background-color: transparent;
 	transition: 0.3s ease background-color;
+	border-bottom: 2px solid white;
 }
 #header .nav-bar {
 	display: flex;
@@ -163,7 +165,7 @@ p{
 	z-index: 100;
 	cursor: pointer;
 	transform: scale(0.8);
-	margin-right: 20px;
+/* 	margin-right: 20px; */
 }
 #header .hamburger:after {
 	position: absolute;
@@ -241,6 +243,7 @@ p{
 	/*width: fit-content;*/
 	text-align: left;
 	font-size: 4rem;
+	font-weight: 600;
 	position: relative;
 	color: transparent;
 	animation: text_reveal .5s ease forwards;
@@ -304,7 +307,7 @@ p{
 	border-radius: 150px;
 	margin-top: 125px;
 	margin-bottom: 20px;
-	border: 7px solid white;
+	border: 4px solid white;
 	background: white;
 }
 #hero .cta{
@@ -834,7 +837,7 @@ p{
 }
 #footer .social-item {
 	height: 50px;
-	width: 50px;
+/* 	width: 50px; */
 	margin: 0 5px;
 }
 #footer .social-item img {
