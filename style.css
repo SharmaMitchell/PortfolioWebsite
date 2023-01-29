@@ -925,7 +925,7 @@ p{
 	}
 	#hero h2{
 		font-size: 3rem;
-		margin-right: 10px;
+		margin-right: 20px;
 	}
 	#hero p{
 		text-align: center;
@@ -1058,6 +1058,7 @@ p{
 		/* margin: auto 20px; */
 		/* width: 75%; */
 		flex-direction: row;
+		align-items: flex-start;
 	}
 	#projects .project-item .project-info{
 		/* max-width: 75%;*/
@@ -1065,6 +1066,7 @@ p{
 		/*border-width: 9px;*/
 		align-items: flex-start;
 		padding: 30px;
+		padding-top: 0;
 	}
 	#projects .project-img {
 		/*width: 75%;*/
