@@ -554,7 +554,8 @@ p {
 	background-size: 20%;
 	*/
 }
-#projects .komibot-pic {
+#projects .komibot-pic,
+#projects .zendecks-pic {
   transform: scale(1.02);
 }
 #projects .project-img img {
