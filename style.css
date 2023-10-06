@@ -53,12 +53,9 @@ p {
 .cta {
   display: inline-block;
   padding: 10px 30px;
-  color: black;
+  color: white;
   background-color: transparent;
   border: 2px solid crimson;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -310,7 +307,7 @@ p {
   background: white;
 }
 #hero .cta {
-  visibility: hidden; /* Hidden on mobile */
+  /* visibility: hidden; Hidden on mobile */
 }
 #hero .social-icon {
   margin-top: 20px;
@@ -365,7 +362,7 @@ p {
 #skills .skill-item {
   flex-basis: 80%;
   display: flex;
-  width: 500px;
+  max-width: 500px;
   /* height: 600px; */
   color: black;
   align-items: center;
@@ -419,6 +416,10 @@ p {
   margin-top: 10px;
   padding: 10px 0;
   gap: 10px;
+}
+
+#skills .project-links-section p {
+  padding: 0 10px;
 }
 
 /* End of Skills Section */
@@ -858,9 +859,9 @@ p {
     font-size: 3rem;
   }
   .cta {
-    font-size: 2.5rem;
+    /* font-size: 2.5rem;
     padding: 20px 60px;
-    margin-right: 20px;
+    margin-right: 20px; */
   }
   h1.section-title {
     font-size: 5rem;
