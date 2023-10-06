@@ -334,6 +334,7 @@ p {
 /* Skills Section */
 #skills .container {
   min-height: 0px;
+  background-color: #d2d2d2;
 }
 #skills .skills {
   flex-direction: column;
@@ -356,7 +357,7 @@ p {
 }
 #skills .skills-bottom {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 50px;
@@ -364,15 +365,13 @@ p {
 #skills .skill-item {
   flex-basis: 80%;
   display: flex;
-  max-width: 480px;
-  height: 400px;
+  width: 500px;
+  /* height: 600px; */
+  color: black;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
-  padding: 30px;
-  /* border-radius: 10px; */
-  background-color: black;
-  background-image: url(./img/University_of_Houston_System_seal.png);
+  background-color: #e6e6e6;
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
@@ -380,72 +379,52 @@ p {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  border-radius: 20px;
-}
-#skills .skill-item::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(0deg, #000000 50%, transparent 120%);
-  opacity: 0.8;
-  z-index: -1;
-}
-#skills .skills-bottom .icon {
-  height: 80px;
-  width: 80px;
-  margin-bottom: 20px;
 }
 #skills .skill-item h2 {
   font-size: 2rem;
-  text-align: left;
-  color: white;
+  text-align: center;
   margin-bottom: 10px;
   text-transform: uppercase;
+  margin-top: 10px;
 }
 #skills .skill-item p {
-  color: white;
   text-align: left;
+  padding: 0 20px;
 }
-#skills .skills-tldr {
-  margin-top: 36px;
+#skills .skill-item img {
+  /* Fit width to parent container */
+  width: 100%;
+  height: auto;
 }
-#skills .skills-tldr-container {
-  background-color: transparent;
-  border-radius: 20px;
-  border: 6px solid black;
+#skills .project-link {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 10px 10px;
-  margin: 0 10px;
+  flex-direction: row;
 }
-#skills .skills-tldr-container h1 {
-  margin-bottom: 10px;
-  font-size: 2.5rem;
-  color: black;
-  font-weight: bold;
+#skills .project-link p {
+  margin-top: 0;
+  color: white;
 }
-#skills .skills-tldr-icons {
+#skills .project-link img {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  filter: invert(100%);
+}
+#skills .project-links-section {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  background-color: #282828;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0;
+  gap: 10px;
 }
-#skills .skills-tldr-container i {
-  font-size: 40px;
-  color: black;
-  margin: 5px;
-}
+
 /* End of Skills Section */
 
 /* Projects Section */
-#projects {
+/* #projects {
   background: lightgray;
 }
 #projects .projects {
@@ -469,7 +448,6 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* width: 80%; */
   margin: 20px auto;
   overflow: hidden;
   background-color: transparent;
@@ -489,7 +467,6 @@ p {
   flex-basis: 50%;
   height: 100%;
   width: 95%;
-  /*max-width: 90%;*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -503,7 +480,6 @@ p {
 }
 #projects .project-info h1 {
   font-size: 3rem;
-  /* font-family: 'Yantramanav', sans-serif; */
   color: black;
   text-align: center;
 }
@@ -533,14 +509,12 @@ p {
   letter-spacing: 0.05rem;
 }
 #projects .project-info .cta {
-  /*color: black;*/
   margin: 10px 0;
   padding: 15px 40px;
   font-size: 2rem;
 }
 #projects .project-img {
   flex-basis: 50%;
-  /*margin-top: 2.5%;*/
   width: 95%;
   overflow: hidden;
   position: relative;
@@ -548,11 +522,6 @@ p {
   border-top-width: 0px;
   border-radius: 20px;
   border: 4px solid black;
-  /*background-image: url(./img/github.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 20%;
-	*/
 }
 #projects .komibot-pic,
 #projects .zendecks-pic {
@@ -666,10 +635,6 @@ p {
   margin-left: 60px;
   margin-bottom: 10px;
 }
-/* #projects .project-button:hover h2:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-} */
 #projects .project-button img {
   height: 50px;
   width: 50px;
@@ -693,7 +658,7 @@ p {
 }
 #projects .project-button {
   width: 235px;
-}
+} */
 /* End of Projects Section */
 
 /* About Section */
@@ -942,7 +907,6 @@ p {
   #skills .skills-bottom .skill-item {
     flex-basis: 45%;
     margin: 2.5%;
-    height: 300px;
   }
 
   #skills .skills-bottom .skill-item p {
@@ -960,6 +924,7 @@ p {
     font-size: 50px;
     margin: 10px;
   }
+
   /* End Skills Section */
 
   /* Projects */
