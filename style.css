@@ -329,9 +329,12 @@ p {
 /* End of Hero Section */
 
 /* posts Section */
+#posts {
+  background-color: #e6e6e6;
+}
+
 #posts .container {
   min-height: 0px;
-  background-color: #d2d2d2;
 }
 #posts .posts {
   flex-direction: column;
@@ -339,7 +342,7 @@ p {
   max-width: 1500px;
   margin: 0 auto;
   padding: 100px 0;
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
 }
 #posts .posts-top p {
   color: black;
@@ -363,7 +366,6 @@ p {
   flex-basis: 80%;
   display: flex;
   max-width: 500px;
-  /* height: 600px; */
   color: black;
   align-items: center;
   justify-content: space-between;
@@ -389,7 +391,6 @@ p {
   padding: 0 20px;
 }
 #posts .post-item img {
-  /* Fit width to parent container */
   width: 100%;
   height: auto;
 }
@@ -425,9 +426,11 @@ p {
 /* End of posts Section */
 
 /* projects Section */
+#projects {
+  background-color: #d2d2d2;
+}
 #projects .container {
   min-height: 0px;
-  background-color: #d2d2d2;
 }
 #projects .projects {
   flex-direction: column;
@@ -523,6 +526,7 @@ p {
 /* About Section */
 #about {
   padding: 100px 20px;
+  background-color: #e6e6e6;
 }
 #about .container {
   min-height: 0px;
