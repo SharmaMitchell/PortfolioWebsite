@@ -328,6 +328,102 @@ p {
 }
 /* End of Hero Section */
 
+/* posts Section */
+#posts .container {
+  min-height: 0px;
+  background-color: #d2d2d2;
+}
+#posts .posts {
+  flex-direction: column;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 100px 0;
+  padding-bottom: 0;
+}
+#posts .posts-top p {
+  color: black;
+  font-size: 1.6rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300px;
+  letter-spacing: 0.05rem;
+}
+#posts .posts-top {
+  max-width: 500px;
+  margin: 0 auto;
+}
+#posts .posts-bottom {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#posts .post-item {
+  flex-basis: 80%;
+  display: flex;
+  max-width: 500px;
+  /* height: 600px; */
+  color: black;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #e6e6e6;
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin: 10px 5%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+#posts h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+#posts .post-item p {
+  text-align: left;
+  padding: 0 20px;
+}
+#posts .post-item img {
+  /* Fit width to parent container */
+  width: 100%;
+  height: auto;
+}
+#posts .post-link {
+  display: flex;
+  flex-direction: row;
+}
+#posts .post-link p {
+  margin-top: 0;
+  color: white;
+}
+#posts .post-link img {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  filter: invert(100%);
+}
+#posts .post-links-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #282828;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0;
+  gap: 10px;
+}
+
+#posts .post-links-section p {
+  padding: 0 10px;
+}
+
+/* End of posts Section */
+
 /* projects Section */
 #projects .container {
   min-height: 0px;
@@ -665,6 +761,30 @@ p {
     margin: 0 5px;
   }
   /* End of Hero Section */
+
+  /* posts Section */
+  #posts .posts-bottom .post-item {
+    flex-basis: 45%;
+    margin: 2.5%;
+  }
+
+  #posts .posts-bottom .post-item p {
+    text-align: justify;
+  }
+  #posts .posts-tldr-container {
+    flex-direction: row;
+    border-radius: 50px;
+  }
+  #posts .posts-tldr-container h1 {
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+  #posts .posts-tldr-container i {
+    font-size: 50px;
+    margin: 10px;
+  }
+
+  /* End posts Section */
 
   /* projects Section */
   #projects .projects-bottom .project-item {
