@@ -328,19 +328,19 @@ p {
 }
 /* End of Hero Section */
 
-/* Skills Section */
-#skills .container {
+/* projects Section */
+#projects .container {
   min-height: 0px;
   background-color: #d2d2d2;
 }
-#skills .skills {
+#projects .projects {
   flex-direction: column;
   text-align: center;
   max-width: 1500px;
   margin: 0 auto;
   padding: 100px 0;
 }
-#skills .skills-top p {
+#projects .projects-top p {
   color: black;
   font-size: 1.6rem;
   margin-top: 5px;
@@ -348,18 +348,18 @@ p {
   font-weight: 300px;
   letter-spacing: 0.05rem;
 }
-#skills .skills-top {
+#projects .projects-top {
   max-width: 500px;
   margin: 0 auto;
 }
-#skills .skills-bottom {
+#projects .projects-bottom {
   display: flex;
   align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 50px;
 }
-#skills .skill-item {
+#projects .project-item {
   flex-basis: 80%;
   display: flex;
   max-width: 500px;
@@ -377,37 +377,37 @@ p {
   z-index: 1;
   overflow: hidden;
 }
-#skills .skill-item h2 {
+#projects .project-item h2 {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 10px;
   text-transform: uppercase;
   margin-top: 10px;
 }
-#skills .skill-item p {
+#projects .project-item p {
   text-align: left;
   padding: 0 20px;
 }
-#skills .skill-item img {
+#projects .project-item img {
   /* Fit width to parent container */
   width: 100%;
   height: auto;
 }
-#skills .project-link {
+#projects .project-link {
   display: flex;
   flex-direction: row;
 }
-#skills .project-link p {
+#projects .project-link p {
   margin-top: 0;
   color: white;
 }
-#skills .project-link img {
+#projects .project-link img {
   height: 24px;
   width: 24px;
   display: inline-block;
   filter: invert(100%);
 }
-#skills .project-links-section {
+#projects .project-links-section {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -418,249 +418,11 @@ p {
   gap: 10px;
 }
 
-#skills .project-links-section p {
+#projects .project-links-section p {
   padding: 0 10px;
 }
 
-/* End of Skills Section */
-
-/* Projects Section */
-/* #projects {
-  background: lightgray;
-}
-#projects .projects {
-  flex-direction: column;
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 100px 0;
-}
-#projects .projects-header h1 {
-  margin-bottom: 50px;
-}
-#projects .all-projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 90%;
-}
-#projects .project-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 20px auto;
-  overflow: hidden;
-  background-color: transparent;
-}
-#projects .project-info::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-  z-index: -1;
-}
-#projects .project-info {
-  padding: 30px 0;
-  flex-basis: 50%;
-  height: 100%;
-  width: 95%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-image: linear-gradient(0deg, 0% white, 100% black);
-  background-clip: padding-box;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  color: black;
-}
-#projects .project-info h1 {
-  font-size: 3rem;
-  color: black;
-  text-align: center;
-}
-#projects .project-info h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 10px;
-  color: black;
-  text-align: center;
-}
-#projects .project-info p {
-  color: black;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-#projects .project-info ul {
-  list-style-type: disc;
-  list-style-position: inside;
-  padding-left: 2%;
-}
-#projects .project-info ul li {
-  color: black;
-  font-size: 1.4rem;
-  margin-top: 5px;
-  line-height: 2.5rem;
-  font-weight: 600;
-  letter-spacing: 0.05rem;
-}
-#projects .project-info .cta {
-  margin: 10px 0;
-  padding: 15px 40px;
-  font-size: 2rem;
-}
-#projects .project-img {
-  flex-basis: 50%;
-  width: 95%;
-  overflow: hidden;
-  position: relative;
-  border-left-width: 0px;
-  border-top-width: 0px;
-  border-radius: 20px;
-  border: 4px solid black;
-}
-#projects .komibot-pic,
-#projects .zendecks-pic {
-  transform: scale(1.02);
-}
-#projects .project-img img {
-  vertical-align: bottom;
-  transition: all 0.3s ease;
-}
-#projects .project-img .project-img-top {
-  position: absolute;
-  left: 0;
-  top: 0;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all 0.3s ease;
-  overflow: hidden;
-  pointer-events: none;
-  display: flex;
-}
-#projects .project-img .project-img-top img {
-  width: 20%;
-  height: auto;
-  background: transparent;
-  background-size: 10%;
-  background-repeat: no-repeat;
-  filter: invert(100%);
-}
-#projects .project-img:hover .project-img-top {
-  opacity: 1;
-}
-#projects .project-item .project-img:hover .project-img-preview img {
-  transform: scale(1.05);
-  filter: blur(1px) brightness(0.6);
-}
-#projects .view-more {
-  margin-top: 10px;
-  padding: 20px;
-}
-#projects .view-more a {
-  color: white;
-  font-size: 3rem;
-  font-weight: bold;
-  filter: drop-shadow(2px 2px 2px black);
-  transition: all 0.25s ease-out;
-}
-#projects .view-more a:hover {
-  color: crimson;
-}
-#projects .view-more-b {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  padding: 4px;
-}
-#projects .view-more .view-more-b a:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  transform: scaleX(0);
-  height: 3px;
-  background-color: crimson;
-  transform-origin: bottom right;
-  transition: transform 0.35s ease-out;
-  z-index: 1;
-}
-#projects .view-more a:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-#projects .project-button {
-  height: 50px;
-
-  border-radius: 25px;
-  border: 2px solid black;
-  border-left: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-right: 15px;
-  margin: 10px;
-  margin-left: 0;
-  margin-right: 20px;
-
-  transition: ease 0.3s all;
-}
-#projects .project-button:hover {
-  background: white;
-  transform: scale(1.05);
-}
-#projects .project-button h2:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: calc(100% - 75px);
-  transform: scaleX(0);
-  height: 3px;
-  background-color: crimson;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-  z-index: 1;
-  margin-left: 60px;
-  margin-bottom: 10px;
-}
-#projects .project-button img {
-  height: 50px;
-  width: 50px;
-  margin-right: 10px;
-  transition: 0.3s ease all;
-}
-#projects .project-button:hover img {
-}
-#projects .project-button h2 {
-  margin: 0;
-  transition: ease 0.3s all;
-}
-#projects .project-button:hover h2 {
-  color: crimson;
-}
-#projects .project-button-group {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-#projects .project-button {
-  width: 235px;
-} */
-/* End of Projects Section */
+/* End of projects Section */
 
 /* About Section */
 #about {
@@ -781,7 +543,7 @@ p {
 /* Footer */
 #footer {
   /* background-image: linear-gradient(125deg, #333333 0%, #212121 100%); */
-  background-color: black;
+  background-color: #171717;
 }
 #footer .footer {
   min-height: 200px;
@@ -904,39 +666,29 @@ p {
   }
   /* End of Hero Section */
 
-  /* Skills Section */
-  #skills .skills-bottom .skill-item {
+  /* projects Section */
+  #projects .projects-bottom .project-item {
     flex-basis: 45%;
     margin: 2.5%;
   }
 
-  #skills .skills-bottom .skill-item p {
+  #projects .projects-bottom .project-item p {
     text-align: justify;
   }
-  #skills .skills-tldr-container {
+  #projects .projects-tldr-container {
     flex-direction: row;
     border-radius: 50px;
   }
-  #skills .skills-tldr-container h1 {
+  #projects .projects-tldr-container h1 {
     margin-left: 10px;
     margin-bottom: 0;
   }
-  #skills .skills-tldr-container i {
+  #projects .projects-tldr-container i {
     font-size: 50px;
     margin: 10px;
   }
 
-  /* End Skills Section */
-
-  /* Projects */
-  #projects .all-projects {
-    width: 65%;
-  }
-  #projects .project-img {
-    /*border-width: 9px;*/
-  }
-
-  /* End Projects */
+  /* End projects Section */
 
   /* About Section */
   #about .about {
@@ -1011,63 +763,6 @@ p {
     transform-origin: bottom left;
   }
   /* End header */
-  /* Projects Section */
-  #projects .all-projects {
-    /* flex-direction: row; */
-    width: 80%;
-  }
-  #projects .project-item {
-    /* margin: auto 20px; */
-    /* width: 75%; */
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  #projects .project-item .project-info {
-    /* max-width: 75%;*/
-    /*border: none;*/
-    /*border-width: 9px;*/
-    align-items: flex-start;
-    padding: 30px;
-    padding-top: 0;
-  }
-  #projects .project-img {
-    /*width: 75%;*/
-    /*border-width: 9px;*/
-    /*
-		border: 9px solid;
-		border-left-color: transparent;
-		border-top-color: transparent;
-		border-right-color: crimson;
-		border-bottom-color: crimson;
-		*/
-  }
-  #projects .project-info h1 {
-    text-align: left;
-  }
-  #projects .project-info h2 {
-    text-align: left;
-  }
-
-  #projects .project-info p {
-    text-align: left;
-  }
-  #projects .project-info ul li {
-    font-size: 1.6rem;
-  }
-  #projects .project-button-group {
-    justify-content: flex-start;
-  }
-  #projects .project-button {
-    width: auto;
-  }
-  #projects .project-button:hover h2:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  #projects .view-more {
-    margin-top: 30px;
-  }
-  /* End of Projects Section */
 
   /* About */
   #about .cta {
