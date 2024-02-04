@@ -330,8 +330,8 @@ p {
 
 /* posts Section */
 #posts {
-  /* background-color: #e6e6e6; */
-  background-color: #d2d2d2;
+  background-color: #e6e6e6;
+  /* background-color: #d2d2d2; */
 }
 
 #posts .container {
@@ -372,8 +372,8 @@ p {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  /* background-color: #d2d2d2; */
-  background-color: #e6e6e6;
+  background-color: #d2d2d2;
+  /* background-color: #e6e6e6; */
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
@@ -386,13 +386,18 @@ p {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 10px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-top: 10px;
+}
+#posts h2 a {
+  color: black;
+  border-bottom: 2px solid black;
 }
 #posts .post-item p {
   text-align: left;
   padding: 0 20px;
 }
+
 #posts .post-item img {
   width: 100%;
   /* height: auto; */
