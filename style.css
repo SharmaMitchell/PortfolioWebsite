@@ -467,6 +467,7 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 50px;
+  width: 100%;
 }
 #projects .project-item {
   flex-basis: 80%;
