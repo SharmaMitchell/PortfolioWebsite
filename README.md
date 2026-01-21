@@ -1,11 +1,5 @@
 # Portfolio Website
-![portfoliowebsite-responsive](https://user-images.githubusercontent.com/90817905/169714905-c117ed0f-f022-4a80-9744-24d5dc8301b1.png)
-
-The is my portfolio website. It's my first web-based project, so my main goal in developing the site is/was to learn, and improve my familiary of HTML & CSS.
-
-I built this website using HTML, CSS, and a bit of Javascript. I started by following a guide, then customized the site to my needs & added features. 
-
-# Current Features
+## Current Features
 - Header/Nav-bar
   - Clickable stylized name at top left to bring users to the top of the page
   - Clickable page sections at top right for easy navigation
